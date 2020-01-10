@@ -1,11 +1,12 @@
 const express = require('express')
 const router = express.Router();
 const fetch = require('node-fetch');
+const path = require('path');
 
 // define the home page route
 router.get('/', function (req, res) {
-    const msg = `Get Giphs`
-    res.send(msg)
+    console.log(__dirname);
+    res.sendFile(path.join(__dirname, 'pages', 'giphy', 'index.html'));
 });
 
 // SEARCH GIPHS, MAX 25 results
