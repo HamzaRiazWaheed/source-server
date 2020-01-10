@@ -2,6 +2,9 @@ body, html{
     padding: 0;
     margin: 0;
 }
+body * {
+    box-sizing: border-box;
+}
 div#searched-gifs {
     display: flex;
     flex-flow: wrap;
@@ -45,5 +48,6 @@ input#gif-search-tag {
     border: 1px solid #b8b8b8;
     border-radius: 3px;
     color: #fff;
-    width: 130px;
+    width: 44%;
+    margin: 0 2.5%;
 }
