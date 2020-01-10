@@ -1,0 +1,37 @@
+body,html {
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+body * {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.heading {
+    padding: 30px 0;
+}
+
+.heading span {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.taxt-block {
+    margin: 30px 0px;
+}
+
+h5 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+a {
+    padding: 3px 7px;
+    background-color: mintcream;
+    box-shadow: 0px 0px 1px 1px #e3e3e3;
+    color: indianred;
+}

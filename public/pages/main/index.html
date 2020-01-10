@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link href="./css.css"  rel="stylesheet">-->
+    <title>Services</title>
+    <base target="_blank">
+    <style>
+        body,
+        html {
+            padding: 5px;
+            margin: 0 auto;
+            max-width: 750px;
+        }
+
+        body * {
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            line-height: 35px;
+        }
+
+        .heading {
+            padding: 30px 0;
+        }
+
+        .heading span {
+            font-weight: 900;
+            font-size: 40px;
+        }
+
+        .taxt-block {
+            margin: 30px 0px;
+        }
+
+        h5 {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        a {
+            padding: 3px 7px;
+            background-color: mintcream;
+            box-shadow: 0px 0px 1px 1px #e3e3e3;
+            color: indianred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <span class="jumbo-text">Source Server</span>
+        <br>
+        provides API interfaces for consuming some Open data.
+    </div>
+    <div class="taxt-block">
+        <h5>Gifs</h5>
+        <p>
+            Search gifs from the famous <a href="https://giphy.com/">Giphy</a> provider.
+            <br>
+            <a href="/giphy/search?q=cat">/giphy/search?q=tag</a> list top 25 gif for the searced tag
+            <br>
+            <a href="/giphy/random?q=cat">/giphy/random?q=tag</a> shows a random gif for the tag.
+            <br>
+            <a href="/giphy/">/giphy</a> provides a simple UI to play around with the provided services.
+        </p>
+    </div>
+</body>
+
+</html>

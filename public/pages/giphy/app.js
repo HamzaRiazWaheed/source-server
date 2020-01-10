@@ -27,6 +27,14 @@ for(var i=0; i < getGif_buttons.length; i++){
 function appendGif(gifs){
     searchedGifs.innerHTML = "";
     gifs.forEach(gif => {
-        searchedGifs.innerHTML += `<img src=${gif}/>`;
+        searchedGifs.innerHTML += `<img class="img-loading" src="${gif}"/>`;
     });
+    /*gifs.forEach((gif, i) => {
+        var img = new Image();
+        img.src = gif;
+        img.onload = function(){
+            searchedGifs.replaceChild(img, i)
+        }
+        // searchedGifs.innerHTML += `<img class="img-loading" src=${gif}/>`;
+    });*/
 }
