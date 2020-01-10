@@ -48,6 +48,6 @@ input#gif-search-tag {
     border: 1px solid #b8b8b8;
     border-radius: 3px;
     color: #fff;
-    width: 44%;
+    min-width: 44%;
     margin: 0 2.5%;
 }
