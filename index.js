@@ -19,8 +19,8 @@ app.use(function(req, res, next) {
 let weather = require('./routes/weather/index');
 app.use('/weather', weather);
 
-//let giphy = require('./routes/giphy/index');
-// app.use('/giphy', giphy);
+let giphy = require('./routes/giphy/index');
+app.use('/giphy', giphy);
 
 /**
  * Get Items
