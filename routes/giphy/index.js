@@ -18,7 +18,6 @@ router.get('/search', function (req, res) {
     }
     
     getGiphs('search',q).then(response => {
-        console.log(response);
         let gifs = response.data.map((img) => {
             return img.images.downsized.url;
         })
