@@ -29,7 +29,7 @@ router.get('/search', function (req, res) {
 
 })
 
-// Get Random Giph
+// Get Random Giph for key word
 router.get('/random', function (req, res) {
     let { q } = req.query;
 
