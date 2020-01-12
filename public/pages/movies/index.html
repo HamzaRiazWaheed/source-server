@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TMDB</title>
+    <link href="../../static/styles/styles.css" rel="stylesheet">
+    <link href="./css.css" rel="stylesheet">    
+    <title>Movies</title>
 </head>
 <body>
-
-    Search TMDb API...
-    <div>
-        <input type="text" id="tmdb-search-box"><button id="search-tmdb">Search</button>
+    <div class="input-wrapper">
+        <label for="movies-search-box">Search</label>
+        <br>
+        <input type="text" id="movies-search-box" placeholder="search...">
+        <br>
+        <div class="options-buttons-wrapper col-3">
+            <div id="search-movie" type="movie" class="get-movies">Movie</div>
+            <div id="search-tv" type="tv" class="get-movies">Tv</div>
+            <div id="search-person" type="person" class="get-movies">Person</div>
+        </div>
     </div>
-    <div id="tmdb-searched-result">
-        
-    </div>
-    
+    <div id="searched-result-box" class="searched-results-box"></div>
+    <script src="./app.js"></script>
 </body>
 </html>
