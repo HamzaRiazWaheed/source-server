@@ -58,4 +58,5 @@ img {
     background-image: url(../imgs/loader.gif);
     background-size: contain;
     background-repeat: no-repeat;
+    width: inherit;
 }

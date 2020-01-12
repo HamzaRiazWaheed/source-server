@@ -33,14 +33,14 @@ router.get('/search', function (req, res) {
                             "id": w.id,
                             "poster": process.env.TMDB_POSTER + w.poster_path,
                             "language": w.original_language,
-                            "title": w.original_title,
+                            "title": (w.media_type == 'tv' ? w.original_name : w.original_title),
                             "genre": w.genre_ids.map((g) => {
                                 return helper.genresList[g];
                             }),
                             "type": w.media_type,
                             "rating": w.vote_average,
                             "overview": w.overview,
-                            "release_date": w.release_date
+                            "release_date": (w.media_type == 'tv' ? w.first_air_date : w.release_date)
                         }
                         return item;
                     })
