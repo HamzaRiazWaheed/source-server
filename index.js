@@ -39,6 +39,8 @@ app.use('/weather', weather);
 let giphy = require('./routes/giphy/index');
 app.use('/giphy', giphy);
 
+let movie = require('./routes/movies/index');
+app.use('/movie', movie);
 
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
