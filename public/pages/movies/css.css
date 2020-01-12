@@ -9,6 +9,11 @@
     border-radius: 5px;
 }
 
+.get-movies {
+    color: #fff !important;
+    font-weight: 600;
+}
+
 .left {
     width: 150px;
 }
