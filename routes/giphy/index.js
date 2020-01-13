@@ -5,7 +5,7 @@ const path = require('path');
 
 // define the home page route
 router.get('/', function (req, res) {
-    console.log(__dirname);
+    console.log('from: ',__dirname);
     res.sendFile(path.join(__dirname, '../../public', 'pages', 'giphy', 'index.html'));
 });
 

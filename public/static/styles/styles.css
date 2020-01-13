@@ -1,0 +1,67 @@
+body * {
+    box-sizing: border-box;
+}
+.input-wrapper {
+    margin: 10px auto;
+    padding: 5px;
+    min-width: 300px;
+    max-width: 550px;
+}
+.input-wrapper label {
+    font-size: 15px;
+    color: #373737;
+}
+.input-wrapper input[type="text"] {
+    width: 100%;
+    border: 1px solid #d0cece;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: #333;
+}
+.options-buttons-wrapper {
+    text-align: center;
+    overflow: auto;
+    height: auto;
+    margin: 10px 0;
+}
+.options-buttons-wrapper > div {
+    padding: 5px 8px;
+    border: 1px solid #b8b8b8;
+    border-radius: 3px;
+    color: #333;
+    cursor: pointer;
+}
+.col-3 > div{
+    float: left;
+    width: 33%;
+}
+.col-2 > div {
+    float: left;
+    width: 44%;
+    margin: 0 2.5%;
+}
+
+.searched-results-box {
+    position: relative;
+    min-height: 300px;
+}
+.searched-results-box:empty::before{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    height: 100%;
+    content: "Nothing to show yet....";
+    text-align: center;
+}
+a {
+    padding: 3px 7px;
+    background-color: mintcream;
+    box-shadow: 0px 0px 1px 1px #e3e3e3;
+    color: indianred;
+}
+img {
+    background-image: url(../imgs/loader.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: inherit;
+}

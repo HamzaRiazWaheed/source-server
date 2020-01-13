@@ -28,7 +28,6 @@ router.get('/currentweather', function (req, res) {
     fetch(url).then(response => {
             return response.json()
         }).then(response => {
-            console.log(response);
             res.send(response)
         }).catch('error', (e) => {
             console.error(e);
