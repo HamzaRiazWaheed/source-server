@@ -45,5 +45,9 @@ app.use('/giphy', giphy);
 let movie = require('./routes/movies/index');
 app.use('/movies', movie);
 
+app.get("*", function(req, res){
+    res.redirect('/')
+})
+
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
