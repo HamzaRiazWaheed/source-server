@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../static/styles/styles.css" rel="stylesheet">
+    <title>Weather</title>
+    <style>
+        body {
+            font-size: 20px;
+            line-height: 35px;
+        }
+    </style>
+    <base target="_blank">
+</head>
+<body>
+
+   <h1>
+       Get Weather for your city using its city name or geographic latitute and longitude
+    </h1>
+    <h3> Current Weather </h3>
+    <strong>City Name:</strong>
+    <br>
+    <a href="/weather/currentweather?city=helsinki,fi">/weather/currentweather?city=helsinki,fi</a> the parameter city gets the city name and ',' and its country code.
+    <br>
+    <br>
+    <strong>City Coordinates</strong>
+    <br>
+    <a href="/weather/currentweather?cords=60,25">/weather/currentweather?cords=60,25</a> the parameter cords gets the city coordinates as latitude ',' longitude.
+    <br>
+
+</body>
+</html>

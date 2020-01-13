@@ -53,7 +53,12 @@ body * {
     content: "Nothing to show yet....";
     text-align: center;
 }
-
+a {
+    padding: 3px 7px;
+    background-color: mintcream;
+    box-shadow: 0px 0px 1px 1px #e3e3e3;
+    color: indianred;
+}
 img {
     background-image: url(../imgs/loader.gif);
     background-size: contain;
