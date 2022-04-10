@@ -45,6 +45,9 @@ app.use('/giphy', giphy);
 let movie = require('./routes/movies/index');
 app.use('/movies', movie);
 
+let numToEng = require('./routes/numtoeng/index');
+app.use('/numtoeng', numToEng);
+
 app.get("*", function(req, res){
     res.redirect('/')
 })
